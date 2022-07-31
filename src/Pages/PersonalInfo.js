@@ -1,17 +1,12 @@
 import React from 'react'
-import NavBar from './NavBar'
+import NavBar from '../Components/NavBar'
+import { Cards } from '../Components/Cards'
 
 export const PersonalInfo = () => {
   return (
     <div>
         <div id="personalInfo-card">
-        <div id="first-column">
-            
-        </div>
-        <div id="second-column">
-            
-        </div>
-
+        <Cards></Cards>
         </div>
         <NavBar></NavBar>
     </div>

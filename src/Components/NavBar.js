@@ -15,7 +15,7 @@ function NavBar() {
     <NavLink to="/PersonalInfo"><i className="fa-solid fa-briefcase"></i></NavLink>
     </div>
     <div id="#icon-navBar">
-    <i className="fa-solid fa-envelope"></i>
+    <NavLink to="/Formpage"><i className="fa-solid fa-envelope"></i></NavLink>
     </div> 
     </div>
   )
