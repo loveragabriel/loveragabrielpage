@@ -108,6 +108,11 @@ body{
 .fa-user:hover, .fa-house:hover, .fa-briefcase:hover, .fa-envelope:hover{
   background-color: #f1c40f;}
 
+  .fa-xmark{
+    color: black;
+    font-size: 1em;
+  }
+
 .span-bckg{
     color: #717171;
     opacity: 0.2;
@@ -121,4 +126,23 @@ body{
 
 nav a.active{
   background-color: #282c34;
+}
+
+#details-pop{
+  position: absolute;
+  z-index: 2;
+  background-color: #f1c40f;
+  width: 40vw;
+  height: 50vh;
+  top: 2em;
+  opacity: 0.9;
+  left: 30%;
+  right: 30%;
+}
+
+@media (min-width: 600px){
+  #pDetails{
+    font-size: 1.3em;
+    margin: 5% 20%;
+}
 }

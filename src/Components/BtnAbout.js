@@ -1,16 +1,19 @@
 import React from 'react'
+import { useState } from 'react';
+import { Detailspopup } from '../Pages/Detailspopup';
 
 
 function BtnAbout() {
-
-  
-  const gabriel=()=>{
-       alert('Gabriel INFO');
-  }
+  const [isHide,setIsHide] = useState(true);
+     const showMe=()=>{
+      return setIsHide(false)
+     }
+ 
   
   return (
     <div>
-    <div id="about-btn" onClick={gabriel}>
+    { !isHide ? <Detailspopup></Detailspopup> : null}
+    <div id="about-btn" onClick={showMe}>
         MORE ABOUT ME 
         <div className='icon-btn'>
         <i className="fa-solid fa-arrow-right"></i>
