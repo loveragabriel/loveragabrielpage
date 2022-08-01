@@ -9,7 +9,7 @@ export const Detailspopup = () => {
   return (
     <div id="details-pop" onClick={close}>
     <i className="fa-solid fa-xmark" ></i>
-        Gabriel
+        In construction
     </div>
   )
 }
