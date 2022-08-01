@@ -54,17 +54,6 @@ body{
 }
 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 #about-btn{
   color: white;
   margin: 10px auto;
@@ -84,7 +73,7 @@ body{
   background-color: #f1c40f;
 }
 
-#nav-Bar{
+#nav-Bar {
   margin-top:10px;
   display: flex;
   align-items: center;
@@ -92,8 +81,8 @@ body{
   background-color: #323232;
   position: relative;
   bottom: 0px;
-  position: fixed;
-  bottom: 0px;
+  position: fixed ;
+  bottom: 0px ;
   width: 100%;
 }
 .fa-user, .fa-house, .fa-briefcase, .fa-envelope {
@@ -112,6 +101,13 @@ body{
     color: black;
     font-size: 1em;
   }
+  h1{
+    color:#f1c40f;
+  }
+  h3{
+    margin:5px;
+    color: white;
+  }
 
 .span-bckg{
     color: #717171;
@@ -122,6 +118,39 @@ body{
     left: -57px;
     font-size: 3em;
     font-weight: 800;
+    animation-name: example;
+  animation-duration: 2s;
+}
+.span-bckg-T{
+  color: #717171;
+  opacity: 0.2;
+  position: relative;
+  z-index: -1;
+  top: -60px;
+  left: -57px;
+  font-size: 2.2em;
+  font-weight: 800;
+  animation-name: example;
+animation-duration: 2s;
+
+}
+
+@keyframes example {
+  from {left: -57px;}
+  to {left: 5px;}
+}
+
+.cards{
+  font-size: 0.8em;
+  display:  grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow:row;
+  color: white;
+  justify-items: center;
+  max-width: 600px;
+}
+.titles{
+  color: #f1c40f;
 }
 
 nav a.active{
@@ -145,4 +174,31 @@ nav a.active{
     font-size: 1.3em;
     margin: 5% 20%;
 }
+}
+
+.class-form{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: flex-end;
+  padding: 20px;
+  color: white;
+  align-items: center;
+}
+
+input{
+  opacity: 0.8;
+  border: solid  #f1c40f 1px;
+  border-radius: 38px;
+  padding: 5px;
+  width: 90vw;
+  color: white;
+}
+
+label{
+  margin: 5px;
+}
+
+placeholder{
+  color: white;
 }

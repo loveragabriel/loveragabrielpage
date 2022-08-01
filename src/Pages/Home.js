@@ -9,17 +9,14 @@ import { useState } from 'react'
  export default function Home() {
     const [isHide,setIsHide] = useState(true);
      const showMe=(e)=>{
-      if (setIsHide === true){
-        return setIsHide(false)}
-        else  setIsHide(true);
-     
+       setIsHide=(!isHide); 
     }
-
+   
     console.log(showMe)
   
    return (
     < div id="home">
-    { !isHide ? <Detailspopup> onChange={showMe}</Detailspopup> : false}
+    {!isHide ? <Detailspopup> onClick={showMe}</Detailspopup> : null}
          <ImgProfile></ImgProfile>
          <DetailsMe/>
          <BtnAbout></BtnAbout>

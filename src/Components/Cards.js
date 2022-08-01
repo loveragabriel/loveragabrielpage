@@ -4,31 +4,27 @@ export const Cards = () => {
     let name = 'Gabriel';
     let lastName = 'Lovera';
     let city = 'Buenos Aires';
-    let email = 'loveragabriel20qgmail.com'
-    let langages = 'Spanish(Native) - English (Upper Intermedite)'
+    let email = 'loveragabriel20@gmail.com'
+    let langages = 'Spanish/English'
 
   return (
-    <div>
-        <div className='card-info'>
-            <p>First Name</p>
+    <div className='cards'>
+        <span className='card-info'>
+            <p className='titles'>First Name</p>
             <p>{name}</p>
-        </div>
-        <div className='card-info'>
-            <p>Last Name</p>
+        </span>
+        <span className='card-info'>
+            <p className='titles'>Last Name</p>
             <p>{lastName}</p>
-        </div>
-        <div className='card-info'>
-            <p>Address</p>
+        </span>
+        <span className='card-info'>
+            <p  className='titles'>Address</p>
             <p>{city}</p>
-        </div>
-        <div className='card-info'>
-            <p>Email</p>
-            <p>{email}</p>
-        </div>
-        <div className='card-info'>
-            <p>Langages</p>
+        </span>
+        <span className='card-info'>
+            <p className='titles'>Langages</p>
             <p>{langages}</p>
-        </div>
+        </span>       
     </div>
   )
 }
