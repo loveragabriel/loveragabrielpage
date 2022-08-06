@@ -8,7 +8,8 @@ export const Formpage = () => {
     window.location.assign("mailto:loveragabriel20@gmail.com subject={}");
 }
   return (
-    <div>
+    <>
+    <div className='form-format'>
     <h1>GET IN TOUCH</h1>
     <span className='span-bckg-T'>GET IN TOUCH</span>
     <h3>
@@ -33,7 +34,8 @@ export const Formpage = () => {
         SEND MESSAGE 
         <i className="fa-solid fa-paper-plane"></i>
         </button>
+        </div>
     <NavBar></NavBar>
-    </div>
+    </>
   )
 }
