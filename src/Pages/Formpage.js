@@ -22,7 +22,7 @@ export const Formpage = () => {
         <h1>GET IN TOUCH</h1>
         <span className='span-bckg-T'>GET IN TOUCH</span>
         <h3>
-          I want to help companies to make true their projects with my skills.
+          I want to help companies to make true their projects with my skills. Reach me out if there are project in your company. 
         </h3>
         <form className='class-form' onSubmit={sendEmail}>
           <label>Name:

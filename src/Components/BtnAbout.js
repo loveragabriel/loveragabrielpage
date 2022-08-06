@@ -10,7 +10,7 @@ function BtnAbout() {
        setIsHide(false)
      } else setIsHide(true )
     }
-    console.log(isHide)
+
   return (
     <div>
     { !isHide ? <Detailspopup></Detailspopup> : null}

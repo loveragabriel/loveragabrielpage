@@ -160,8 +160,29 @@ animation-duration: 2s;
   position: relative;
   bottom: 3em;
 }
+#network-icons{
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+  align-content: flex-end;
+  justify-content: center;
+  font-size: 2em;
+  color: #f1c40f;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.fa-linkedin:hover,
+.fa-github:hover{
+  transform: scale(1.5);
+  color: aliceblue;
+
+}
+
+
 .titles{
   color: #f1c40f;
+
 }
 
 nav a.active{
@@ -178,7 +199,7 @@ nav a.active{
   width: 85vw;
   height: 40vh;
   border-radius: 5px;
- 
+ border: solid black 0.5px;
 }
 
 @media (min-width: 600px){
@@ -197,6 +218,7 @@ nav a.active{
   opacity: 0.9;
   left: 30%;
   right: 30%;
+  
 }
 }
 
@@ -231,12 +253,8 @@ placeholder{
   color: white;
 }
 
-.okSent{
-  display: block;
-  width: 50px;
-  height: 50px;
-  background-color: #717171;
-  opacity: 0.9;
-  border-radius: 5px;
-
+.pop{
+  margin: 2px;
+  padding: 2px;
+  text-align: justify;
 }
