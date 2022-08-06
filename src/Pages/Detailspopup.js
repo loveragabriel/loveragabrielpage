@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 
 export const Detailspopup = () => {
-  const [closet, setCloset] = useState('none')
-  const close=(e)=>{
-    e.currentTarget.style.display = "none";
-  }
+   const cerrar=(e)=>{
+     const Xbutton = document.getElementById('details-pop');
+    Xbutton.style.display = 'none'
+   }
 
   return (
-    <div id="details-pop" onClick={close}>
-    <i className="fa-solid fa-xmark" ></i>
+    <div id="details-pop" >
+    <i className="fa-solid fa-xmark"  onClick={cerrar}></i>
         In construction
     </div>
   )

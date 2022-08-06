@@ -5,11 +5,12 @@ import { Detailspopup } from '../Pages/Detailspopup';
 
 function BtnAbout() {
   const [isHide,setIsHide] = useState(true);
-     const showMe=()=>{
-      return setIsHide(false)
-     }
- 
-  
+     const showMe=(e)=>{
+      if(isHide){
+       setIsHide(false)
+     } else setIsHide(true )
+    }
+    console.log(isHide)
   return (
     <div>
     { !isHide ? <Detailspopup></Detailspopup> : null}
