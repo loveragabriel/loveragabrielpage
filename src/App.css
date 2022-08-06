@@ -68,6 +68,8 @@ body{
   min-width: 200px;
   cursor: pointer;
   background-color: transparent;
+  position: relative;
+  bottom: 1em;
   
 }
 #about-btn:hover{
@@ -79,8 +81,7 @@ body{
   display: flex;
   align-items: center;
   justify-content:center; 
-  background-color: #323232;
-  position: relative;
+  background-color: #323232;  
   bottom: 0px;
   position: fixed ;
   bottom: 0px ;
@@ -142,6 +143,7 @@ animation-duration: 2s;
 }
 
 .cards{
+  margin: 0 auto;
   font-size: 0.8em;
   display:  grid;
   grid-template-columns: 1fr 1fr;
@@ -149,6 +151,8 @@ animation-duration: 2s;
   color: white;
   justify-items: center;
   max-width: 600px;
+  position: relative;
+  bottom: 3em;
 }
 .titles{
   color: #f1c40f;
