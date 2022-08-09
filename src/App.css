@@ -192,6 +192,7 @@ nav a.active{
 #details-pop{
   margin: auto 10vw;
   position: absolute;
+  font-size: 1.3m;
   z-index: 2;
   background-color: #f1c40f;
   top: 2em;
@@ -199,7 +200,7 @@ nav a.active{
   width: 85vw;
   height: 40vh;
   border-radius: 5px;
- border: solid black 0.5px;
+  border: solid black 0.5px;
 }
 
 @media (min-width: 600px){
