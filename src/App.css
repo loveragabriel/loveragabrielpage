@@ -195,7 +195,7 @@ nav a.active{
   font-size: 1.3m;
   z-index: 2;
   background-color: #f1c40f;
-  top: 2em;
+  top: -25em;
   opacity: 0.9;
   width: 85vw;
   height: 40vh;
@@ -205,21 +205,20 @@ nav a.active{
 
 @media (min-width: 600px){
   #pDetails{
+    position: relative;
     font-size: 2em;
     margin: 5% 20%;
 }
 #details-pop{
   margin: auto;
-   position: absolute;
+  position: absolute;
   z-index: 2;
   background-color: #f1c40f;
   width: 40vw;
   height: 50vh;
-  top: 2em;
+  top: -28em;
   opacity: 0.9;
-  left: 30%;
-  right: 30%;
-  
+  color: black;
 }
 }
 

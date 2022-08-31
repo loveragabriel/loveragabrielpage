@@ -4,22 +4,16 @@ import { Detailspopup } from '../Pages/Detailspopup';
 
 
 function BtnAbout() {
-  const [isHide,setIsHide] = useState(true);
-     const showMe=(e)=>{
-      if(isHide){
-       setIsHide(false)
-     } else setIsHide(true )
-    }
-
+  const [showPopUp,setShowPopUp] = useState(true);
   return (
     <div>
-    { !isHide ? <Detailspopup></Detailspopup> : null}
-    <div id="about-btn" onClick={showMe}>
+    <div id="about-btn" onClick={()=>{setShowPopUp(!showPopUp)}}>
         MORE ABOUT ME 
+        { !showPopUp && <Detailspopup/> }
         <div className='icon-btn'>
         <i className="fa-solid fa-arrow-right"></i>
         </div>
-    </div>
+        </div>
     </div>
   )
 }
