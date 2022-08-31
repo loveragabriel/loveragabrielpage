@@ -196,11 +196,12 @@ nav a.active{
   z-index: 2;
   background-color: #f1c40f;
   top: -25em;
-  opacity: 0.9;
+  opacity: 0.95;
   width: 85vw;
   height: 40vh;
   border-radius: 5px;
   border: solid black 0.5px;
+  color:  black;
 }
 
 @media (min-width: 600px){
