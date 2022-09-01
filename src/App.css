@@ -38,7 +38,7 @@ body{
 #pDetails{
   margin: 0px auto;
   color: white;
-  font-size: 1em;
+  font-size: 0.9em;
   text-align: center;
   padding: 0.5em;
 }
@@ -207,7 +207,7 @@ nav a.active{
 @media (min-width: 600px){
   #pDetails{
     position: relative;
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 5% 20%;
 }
 #details-pop{
@@ -258,4 +258,12 @@ placeholder{
   margin: 2px;
   padding: 2px;
   text-align: justify;
+}
+
+.tech-tools{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2px;
+  font-size: 2em;
 }

@@ -5,12 +5,19 @@ export const Detailspopup = () => {
      const Xbutton = document.getElementById('details-pop');
     Xbutton.style.display = 'none'
    }
-   let textDetail = `I have been learing about programming with focuse on front end and with the objective of working on projects that allow me to broad my knowlodge and skills. I am open to explore new areas of software development.`
+   let textDetail = `Hi! these are some of the technologies that I have been learning`
 
   return (
     <div id="details-pop" >
     <i className="fa-solid fa-xmark"  onClick={cerrar}></i>
-        <p className='pop'>{textDetail}</p>
+    <p className='pop'>{textDetail}</p>        <div className='tech-tools'>
+        <i class="fa-brands fa-html5"></i>  
+        <i class="fa-brands fa-css3-alt"></i>
+        <i class="fa-brands fa-js"></i>
+        <i class="fa-brands fa-react"></i>
+        <i class="fa-brands fa-git"></i>
+        </div>
+       
     </div>
   )
 }
